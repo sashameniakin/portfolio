@@ -2,22 +2,24 @@ import styled from "styled-components";
 
 export const StyledHeader = styled.header`
   background-color: ${({ theme }) => theme.colors.main};
-
-  /*  overflow: hidden; */
+  padding-bottom: 5%;
 `;
 
 export const Nav = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin: 0px 165px;
+  margin: 0 auto;
+  width: 80%;
 
   @media (max-width: ${({ theme }) => theme.tablet}) {
-    margin: 0px 30px;
+    width: 90%;
+    margin: 0 auto;
   }
 
   @media (max-width: ${({ theme }) => theme.mobile}) {
-    margin: 0 16px;
+    width: 100%;
+    margin: 0 auto;
     flex-direction: column;
     align-items: center;
   }
@@ -26,18 +28,14 @@ export const Nav = styled.div`
     color: ${({ theme }) => theme.colors.mainwhite};
     font-weight: bold;
     font-size: 32px;
-    margin-top: 20px;
-    margin-bottom: 25px;
-    min-width: 585px;
 
     @media (max-width: ${({ theme }) => theme.tablet}) {
       font-size: 24px;
-      min-width: 500px;
     }
 
     @media (max-width: ${({ theme }) => theme.mobile}) {
       font-size: 24px;
-      min-width: 0px;
+      z-index: 1;
     }
   }
 `;
@@ -48,7 +46,7 @@ export const LogoContainer = styled.section`
   align-items: center;
   gap: 24px;
   z-index: 1;
-  margin-top: -15px;
+  /*   margin-top: -15px; */
   padding-right: 20px;
 
   @media (max-width: ${({ theme }) => theme.mobile}) {
@@ -86,8 +84,8 @@ export const Rings = styled.img`
 export const TextContainer = styled.section`
   display: flex;
   flex-direction: column;
-  /*   overflow: hidden; */
-  /*  margin-right: -28px; */
+  width: 60%;
+  margin: 0 auto;
 
   br {
     content: "";
@@ -98,39 +96,39 @@ export const TextContainer = styled.section`
   }
 
   @media (max-width: ${({ theme }) => theme.mobile}) {
+    width: 100%;
     align-items: center;
-    /*  width: 343px; */
   }
 
   p:nth-child(1) {
     font-size: 88px;
     color: ${({ theme }) => theme.colors.mainwhite};
     font-weight: bold;
-    margin-right: -150px;
-    margin-top: 40px;
+    margin-right: -15%;
+    margin-top: 5%;
     z-index: 1;
     word-break: break-word;
     line-height: 1;
 
     span:nth-child(2) {
       text-decoration: underline ${({ theme }) => theme.colors.active};
-      text-underline-offset: 17px;
+      text-underline-offset: 18px;
     }
 
     @media (max-width: ${({ theme }) => theme.tablet}) {
       font-size: 72px;
 
-      span {
+      /*   span {
         white-space: nowrap;
-      }
+      } */
       span:nth-child(2) {
-        text-underline-offset: 15px;
+        text-underline-offset: 14px;
       }
     }
 
     @media (max-width: ${({ theme }) => theme.mobile}) {
       font-size: 40px;
-      margin-right: 0px;
+      margin-right: 0;
       text-align: center;
       br {
         content: normal;
@@ -145,17 +143,17 @@ export const TextContainer = styled.section`
   p:nth-child(2) {
     font-size: 18px;
     color: ${({ theme }) => theme.colors.secwhite};
-    width: 445px;
-    margin-top: 0;
-    margin-bottom: 100px;
+    width: 60%;
+    margin-bottom: 20%;
     word-break: break-word;
+    margin-top: -5%;
 
     @media (max-width: ${({ theme }) => theme.tablet}) {
-      margin-bottom: 41px;
+      width: 100%;
+      margin-bottom: 5%;
     }
 
     @media (max-width: ${({ theme }) => theme.mobile}) {
-      width: 343px;
       text-align: justify;
       text-align-last: center;
     }
@@ -166,32 +164,49 @@ export const TextContainer = styled.section`
     color: ${({ theme }) => theme.colors.mainwhite};
     text-decoration: underline 3px ${({ theme }) => theme.colors.active};
     text-underline-offset: 17px;
-    width: 120px;
     font-weight: bold;
+    margin-top: -10%;
 
     :hover,
     :focus {
       color: ${({ theme }) => theme.colors.active};
       cursor: pointer;
     }
+
+    @media (max-width: ${({ theme }) => theme.tablet}) {
+      margin-top: 4%;
+    }
   }
 `;
 
 export const Foto = styled.picture`
   margin-top: -110px;
+  width: 40%;
+
+  img {
+    width: 100%;
+  }
+
+  @media (max-width: ${({ theme }) => theme.mobile}) {
+    width: 50%;
+    margin-top: -20%;
+  }
 `;
 
 export const StyledSection = styled.section`
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin: 0 165px;
+  margin: 0 auto;
+  width: 80%;
 
   @media (max-width: ${({ theme }) => theme.tablet}) {
-    margin: 0px 0px 0px 30px;
+    width: 95%;
+    margin-right: 0;
+    margin-left: 5%;
   }
   @media (max-width: ${({ theme }) => theme.mobile}) {
-    margin: 0 16px;
+    margin: 0 auto;
     flex-direction: column-reverse;
     align-items: center;
   }
