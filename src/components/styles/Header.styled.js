@@ -3,6 +3,14 @@ import styled from "styled-components";
 export const StyledHeader = styled.header`
   background-color: ${({ theme }) => theme.colors.main};
   padding-bottom: 5%;
+
+  @media (max-width: ${({ theme }) => theme.tablet}) {
+    padding-bottom: 9%;
+  }
+
+  @media (max-width: ${({ theme }) => theme.mobile}) {
+    padding-bottom: 15%;
+  }
 `;
 
 export const Nav = styled.div`
@@ -113,6 +121,60 @@ export const TextContainer = styled.section`
     span:nth-child(2) {
       text-decoration: underline ${({ theme }) => theme.colors.active};
       text-underline-offset: 18px;
+
+      color: transparent;
+      background: conic-gradient(
+        #d9d7f1 12%,
+        #baabda 12%,
+        #baabda 33%,
+        #e7fbbe 33%,
+        #e7fbbe 55%,
+        #ffcbcb 55%,
+        #ffcbcb 70%,
+        #b5deff 70%,
+        #b5deff 87%,
+        #f7d1ba 87%
+      );
+      background-size: 50%;
+      background-clip: text;
+      -webkit-background-clip: text;
+
+      animation: expand-rev 0.5s ease forwards;
+
+      cursor: pointer;
+
+      :hover {
+        animation: expand 0.5s ease forwards;
+      }
+      @keyframes expand {
+        0% {
+          background-size: 50%;
+          background-position: 0 0;
+        }
+        20% {
+          background-size: 55%;
+          background-position: 0 1em;
+        }
+        100% {
+          background-size: 325%;
+          background-position: -10em -4em;
+        }
+      }
+
+      @keyframes expand-rev {
+        0% {
+          background-size: 325%;
+          background-position: -10em -4em;
+        }
+        20% {
+          background-size: 55%;
+          background-position: 0 1em;
+        }
+        100% {
+          background-size: 50%;
+          background-position: 0 0;
+        }
+      }
     }
 
     @media (max-width: ${({ theme }) => theme.tablet}) {
