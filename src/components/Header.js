@@ -52,7 +52,7 @@ export default function Header() {
               srcSet="./images/image-profile-desktop.webp"
             />
             <source
-              media="(min-width:375px)"
+              media="(min-width:415px)"
               srcSet="./images/image-profile-tablet.webp"
             />
 
