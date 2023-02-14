@@ -8,10 +8,16 @@ import {
 
 import Project from "./Project";
 import Skill from "./Skill";
+import Header from "./Header";
+import { Circle } from "./styles/Header.styled";
 
 export default function Main() {
   return (
     <StyledMain>
+      <Header />
+      {/*    <Circle>
+        <img src="./images/pattern-circle.svg" alt="circle" />
+      </Circle> */}
       <Container>
         <Skill skill={"HTML"} years={4} />
         <Skill skill={"CSS"} years={4} />

@@ -7,6 +7,15 @@ export const StyledMain = styled.main`
   flex-direction: column;
   align-items: center;
   overflow: hidden;
+  padding-bottom: 5%;
+
+  @media (max-width: ${({ theme }) => theme.tablet}) {
+    padding-bottom: 9%;
+  }
+
+  @media (max-width: ${({ theme }) => theme.mobile}) {
+    padding-bottom: 25%;
+  }
 `;
 
 export const Container = styled.div`
