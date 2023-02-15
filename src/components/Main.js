@@ -10,6 +10,7 @@ import Project from "./Project";
 import Skill from "./Skill";
 import Header from "./Header";
 import { Circle } from "./styles/Header.styled";
+import Footer from "./Footer";
 
 export default function Main() {
   return (
@@ -71,6 +72,7 @@ export default function Main() {
           techstack={"HTML CSS JAVASCRIPT"}
         />
       </Projects>
+      <Footer />
     </StyledMain>
   );
 }

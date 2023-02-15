@@ -1,8 +1,8 @@
 import NavStyle from "./styles/Nav.styled";
 
-export default function Nav() {
+export default function Nav({ footer }) {
   return (
-    <NavStyle>
+    <NavStyle footer={footer}>
       <div>adamkeyes</div>
       <div>
         <img src="./images/icon-github.svg" alt="github" />

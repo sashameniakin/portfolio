@@ -7,15 +7,6 @@ export const StyledMain = styled.main`
   flex-direction: column;
   align-items: center;
   overflow: hidden;
-  padding-bottom: 5%;
-
-  @media (max-width: ${({ theme }) => theme.tablet}) {
-    padding-bottom: 9%;
-  }
-
-  @media (max-width: ${({ theme }) => theme.mobile}) {
-    padding-bottom: 25%;
-  }
 `;
 
 export const Container = styled.div`
@@ -24,7 +15,7 @@ export const Container = styled.div`
   justify-items: start;
   width: 80%;
   gap: 2%;
-  border-top: solid 2px ${({ theme }) => theme.colors.mainwhite};
+  border-top: solid 1px ${({ theme }) => theme.colors.mainwhite};
 
   @media (max-width: ${({ theme }) => theme.tablet}) {
     display: grid;
@@ -110,10 +101,12 @@ export const Projects = styled.div`
   grid-template-columns: repeat(2, 1fr);
   width: 80%;
   gap: 2%;
+  margin-bottom: 7%;
 
   @media (max-width: ${({ theme }) => theme.tablet}) {
     width: 90%;
     margin: 0 auto;
+    margin-bottom: 12%;
   }
 
   @media (max-width: ${({ theme }) => theme.mobile}) {
