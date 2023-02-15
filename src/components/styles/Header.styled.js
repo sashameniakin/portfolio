@@ -3,66 +3,13 @@ import styled from "styled-components";
 export const StyledHeader = styled.header`
   background-color: ${({ theme }) => theme.colors.main};
   padding-bottom: 5%;
-`;
-
-export const Nav = styled.div`
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  margin: 0 auto;
-  width: 80%;
 
   @media (max-width: ${({ theme }) => theme.tablet}) {
-    width: 90%;
-    margin: 0 auto;
+    padding-bottom: 9%;
   }
 
   @media (max-width: ${({ theme }) => theme.mobile}) {
-    width: 100%;
-    margin: 0 auto;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  div {
-    color: ${({ theme }) => theme.colors.mainwhite};
-    font-weight: bold;
-    font-size: 32px;
-
-    @media (max-width: ${({ theme }) => theme.tablet}) {
-      font-size: 24px;
-    }
-
-    @media (max-width: ${({ theme }) => theme.mobile}) {
-      font-size: 24px;
-      z-index: 1;
-    }
-  }
-`;
-
-export const LogoContainer = styled.section`
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  gap: 24px;
-  z-index: 1;
-  /*   margin-top: -15px; */
-  padding-right: 20px;
-
-  @media (max-width: ${({ theme }) => theme.mobile}) {
-    padding: 0px;
-  }
-`;
-
-export const Circle = styled.img`
-  width: 129px;
-  height: 129px;
-  margin-top: 400px;
-  /*margin-left: 665px; */
-  z-index: 1;
-
-  @media (max-width: ${({ theme }) => theme.tablet}) {
-    margin-top: 365px;
+    padding-bottom: 15%;
   }
 `;
 
@@ -81,104 +28,6 @@ export const Rings = styled.img`
   }
 `;
 
-export const TextContainer = styled.section`
-  display: flex;
-  flex-direction: column;
-  width: 60%;
-  margin: 0 auto;
-
-  br {
-    content: "";
-  }
-
-  br:after {
-    content: " ";
-  }
-
-  @media (max-width: ${({ theme }) => theme.mobile}) {
-    width: 100%;
-    align-items: center;
-  }
-
-  p:nth-child(1) {
-    font-size: 88px;
-    color: ${({ theme }) => theme.colors.mainwhite};
-    font-weight: bold;
-    margin-right: -15%;
-    margin-top: 5%;
-    z-index: 1;
-    word-break: break-word;
-    line-height: 1;
-
-    span:nth-child(2) {
-      text-decoration: underline ${({ theme }) => theme.colors.active};
-      text-underline-offset: 18px;
-    }
-
-    @media (max-width: ${({ theme }) => theme.tablet}) {
-      font-size: 72px;
-
-      /*   span {
-        white-space: nowrap;
-      } */
-      span:nth-child(2) {
-        text-underline-offset: 14px;
-      }
-    }
-
-    @media (max-width: ${({ theme }) => theme.mobile}) {
-      font-size: 40px;
-      margin-right: 0;
-      text-align: center;
-      br {
-        content: normal;
-      }
-
-      span:nth-child(2) {
-        text-underline-offset: 8px;
-      }
-    }
-  }
-
-  p:nth-child(2) {
-    font-size: 18px;
-    color: ${({ theme }) => theme.colors.secwhite};
-    width: 60%;
-    margin-bottom: 20%;
-    word-break: break-word;
-    margin-top: -5%;
-
-    @media (max-width: ${({ theme }) => theme.tablet}) {
-      width: 100%;
-      margin-bottom: 5%;
-    }
-
-    @media (max-width: ${({ theme }) => theme.mobile}) {
-      text-align: justify;
-      text-align-last: center;
-    }
-  }
-
-  p:nth-child(3) {
-    font-size: 16px;
-    color: ${({ theme }) => theme.colors.mainwhite};
-    text-decoration: underline 3px ${({ theme }) => theme.colors.active};
-    text-underline-offset: 17px;
-    font-weight: bold;
-    margin-top: -10%;
-
-    :hover,
-    :focus {
-      color: ${({ theme }) => theme.colors.active};
-      cursor: pointer;
-    }
-
-    @media (max-width: ${({ theme }) => theme.tablet}) {
-      margin-top: 4%;
-    }
-  }
-`;
-
 export const Foto = styled.picture`
   margin-top: -110px;
   width: 40%;
@@ -193,7 +42,25 @@ export const Foto = styled.picture`
   }
 `;
 
+export const Circle = styled.div`
+  margin-top: 0%;
+  /*   position: absolute; */
+  margin-left: 0%;
+  z-index: 1;
+
+  @media (max-width: ${({ theme }) => theme.tablet}) {
+    margin-top: 40%;
+    margin-left: 90%;
+  }
+
+  @media (max-width: ${({ theme }) => theme.mobile}) {
+    margin-top: 20%;
+    /*  margin-left: 100%; */
+  }
+`;
+
 export const StyledSection = styled.section`
+  /*  position: relative; */
   display: flex;
   flex-direction: row;
   justify-content: space-between;
