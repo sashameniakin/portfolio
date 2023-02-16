@@ -17,7 +17,9 @@ export default function Description() {
         accessible web apps that users love.
       </p>
 
-      <p>CONTACT ME</p>
+      <p>
+        <a href="#contact">CONTACT ME</a>
+      </p>
     </DescriptionStyle>
   );
 }

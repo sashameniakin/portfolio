@@ -67,7 +67,7 @@ const DescriptionStyle = styled.section`
           background-position: 0 1em;
         }
         100% {
-          background-size: 325%;
+          background-size: 310%;
           background-position: -10em -4em;
         }
       }

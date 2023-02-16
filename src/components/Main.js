@@ -32,7 +32,10 @@ export default function Main() {
       </Rings>
       <Nav>
         <p>Projects</p>
-        <p>CONTACT ME</p>
+
+        <p>
+          <a href="#contact">CONTACT ME </a>
+        </p>
       </Nav>
       <Projects>
         <Project

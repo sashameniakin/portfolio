@@ -10,7 +10,7 @@ const NavStyle = styled.section`
   border-top: ${(props) => (props.footer ? "solid 1px white" : "")};
   padding-bottom: ${(props) => (props.footer ? "6%" : "3%")};
   padding-top: ${(props) => (props.footer ? "2%" : "1%")};
-  margin-top: ${(props) => (props.footer ? "3%" : "")};
+  margin-top: ${(props) => (props.footer ? "3%" : "-1%")};
 
   @media (max-width: ${({ theme }) => theme.tablet}) {
     width: 90%;

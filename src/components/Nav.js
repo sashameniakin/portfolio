@@ -5,10 +5,44 @@ export default function Nav({ footer }) {
     <NavStyle footer={footer}>
       <div>adamkeyes</div>
       <div>
-        <img src="./images/icon-github.svg" alt="github" />
-        <img src="./images/icon-frontend-mentor.svg" alt="frontend-mentor" />
-        <img src="./images/icon-linkedin.svg" alt="linkedin" />
-        <img src="./images/icon-twitter.svg" alt="twitter" />
+        <img
+          src="./images/icon-github.svg"
+          alt="github"
+          onMouseOver={(e) =>
+            (e.currentTarget.src = "./images/icon-github-active.svg")
+          }
+          onMouseOut={(e) => (e.currentTarget.src = "./images/icon-github.svg")}
+        />
+        <img
+          src="./images/icon-frontend-mentor.svg"
+          alt="frontend-mentor"
+          onMouseOver={(e) =>
+            (e.currentTarget.src = "./images/icon-frontend-mentor-active.svg")
+          }
+          onMouseOut={(e) =>
+            (e.currentTarget.src = "./images/icon-frontend-mentor.svg")
+          }
+        />
+        <img
+          src="./images/icon-linkedin.svg"
+          alt="linkedin"
+          onMouseOver={(e) =>
+            (e.currentTarget.src = "./images/icon-linkedin-active.svg")
+          }
+          onMouseOut={(e) =>
+            (e.currentTarget.src = "./images/icon-linkedin.svg")
+          }
+        />
+        <img
+          src="./images/icon-twitter.svg"
+          alt="twitter"
+          onMouseOver={(e) =>
+            (e.currentTarget.src = "./images/icon-twitter-active.svg")
+          }
+          onMouseOut={(e) =>
+            (e.currentTarget.src = "./images/icon-twitter.svg")
+          }
+        />
       </div>
     </NavStyle>
   );

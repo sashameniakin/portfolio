@@ -13,9 +13,12 @@ body {
     padding: 0;
     font-family: 'Space Grotesk', sans-serif;
     width: 100%;
-/* overflow: hidden; */
-   
+
 }
+a {
+    text-decoration: none;
+    color: inherit;
+  }
 `;
 
 export default GlobalStyles;

@@ -5,20 +5,21 @@ import { Rings } from "./styles/Footer.styled";
 import Nav from "./Nav";
 
 export default function Footer() {
-  const [error, setError] = useState(true);
+  const [inputValue, setInputValue] = useState("");
+  const [blur, setBlur] = useState(false);
 
-  function errorset() {
-    setError(true);
+  function handleBlur() {
+    setBlur(true);
   }
 
-  function style(e) {
-    e.target.setCustomValidity("");
+  function handleChange() {
+    setBlur(false);
   }
 
   return (
     <FooterStyle>
       <Flex>
-        <div>
+        <div id="contact">
           <p>Contact</p>
           <p>
             I would love to hear about your project and how I could help. Please
@@ -26,15 +27,26 @@ export default function Footer() {
           </p>
         </div>
         <form>
-          <input type="text" placeholder="NAME" />
+          <input type="text" placeholder="NAME" required />
           <input
             type="email"
             placeholder="EMAIL"
-            onInvalid={errorset}
-            pattern="^[a-zA-Z0-9]+(?:\.[a-zA-Z0-9]+)*@[a-zA-Z0-9]+(?:\.[a-zA-Z0-9]+)*$"
+            value={inputValue}
+            onChange={(e) => setInputValue(e.target.value)}
+            onBlur={handleBlur}
+            onFocus={handleChange}
+            required
           />
-          {error && <span error={error}>Sorry, invalid format here</span>}
-          <textarea type="textarea" placeholder="MESSAGE" />
+          {inputValue &&
+            !blur &&
+            (!inputValue.includes("@") ||
+              (inputValue.includes("@") &&
+                inputValue.charAt(inputValue.length - 1) === "@") ||
+              (inputValue.includes(".") &&
+                inputValue.charAt(inputValue.length - 1) === ".")) && (
+              <span>Sorry, invalid format here</span>
+            )}
+          <textarea type="textarea" placeholder="MESSAGE" required />
           <button type="submit">SEND MESSAGE</button>
         </form>
       </Flex>
