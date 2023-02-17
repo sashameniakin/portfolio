@@ -33,8 +33,7 @@ const NavStyle = styled.section`
     color: ${({ theme }) => theme.colors.mainwhite};
     font-weight: bold;
     font-size: 32px;
-    margin: 0;
-    padding: 0;
+    margin-top: ${(props) => (props.footer ? "0%" : "3%")};
 
     @media (max-width: ${({ theme }) => theme.tablet}) {
       font-size: 24px;
@@ -52,8 +51,6 @@ const NavStyle = styled.section`
     align-items: center;
     gap: 24px;
     z-index: 1;
-    margin: 0;
-    padding: 0;
 
     @media (max-width: ${({ theme }) => theme.mobile}) {
       padding: 0px;
