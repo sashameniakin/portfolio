@@ -87,6 +87,7 @@ export const Nav = styled.div`
     text-decoration: underline 3px ${({ theme }) => theme.colors.active};
     text-underline-offset: 17px;
     font-weight: bold;
+    letter-spacing: 2.28571px;
 
     :hover,
     :focus {

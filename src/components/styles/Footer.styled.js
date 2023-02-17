@@ -62,11 +62,10 @@ export const FooterStyle = styled.section`
       margin-top: 7%;
 
       span {
-        display: block; /* ${(props) => (props.error ? "block" : "none")}; */
         color: #ff6f5b;
         font-size: 12px;
         margin-top: -3%;
-
+        padding-top: -10%;
         text-align: right;
       }
 
@@ -94,8 +93,13 @@ export const FooterStyle = styled.section`
         }
       }
 
+      input:nth-child(2) {
+        margin-bottom: 0;
+      }
+
       textarea {
         padding-bottom: 15%;
+        margin-top: 5%;
       }
 
       button {
@@ -105,6 +109,7 @@ export const FooterStyle = styled.section`
         font-family: "Space Grotesk", sans-serif;
         text-decoration: underline 1px ${({ theme }) => theme.colors.active};
         text-underline-offset: 15px;
+        letter-spacing: 2.28571px;
         padding: 0;
 
         :hover,
@@ -121,7 +126,11 @@ export const Flex = styled.div`
   display: flex;
   width: 80%;
   margin: 0 auto;
-  gap: 10%;
+  gap: 23%;
+
+  p:nth-child(2) {
+    line-height: 28px;
+  }
 
   @media (max-width: ${({ theme }) => theme.tablet}) {
     flex-direction: column;

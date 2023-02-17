@@ -91,11 +91,8 @@ const DescriptionStyle = styled.section`
     @media (max-width: ${({ theme }) => theme.tablet}) {
       font-size: 72px;
 
-      /*   span {
-        white-space: nowrap;
-      } */
       span:nth-child(2) {
-        text-underline-offset: 14px;
+        text-underline-offset: 15px;
       }
     }
 
@@ -120,6 +117,7 @@ const DescriptionStyle = styled.section`
     margin-bottom: 20%;
     word-break: break-word;
     margin-top: -5%;
+    line-height: 28px;
 
     @media (max-width: ${({ theme }) => theme.tablet}) {
       width: 100%;
@@ -139,6 +137,7 @@ const DescriptionStyle = styled.section`
     text-underline-offset: 17px;
     font-weight: bold;
     margin-top: -10%;
+    letter-spacing: 2.28571px;
 
     :hover,
     :focus {

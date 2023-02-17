@@ -55,12 +55,10 @@ export const Circle = styled.div`
 
   @media (max-width: ${({ theme }) => theme.mobile}) {
     margin-top: 20%;
-    /*  margin-left: 100%; */
   }
 `;
 
 export const StyledSection = styled.section`
-  /*  position: relative; */
   display: flex;
   flex-direction: row;
   justify-content: space-between;

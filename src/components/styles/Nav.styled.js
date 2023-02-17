@@ -15,10 +15,12 @@ const NavStyle = styled.section`
   @media (max-width: ${({ theme }) => theme.tablet}) {
     width: 90%;
     margin: 0 auto;
+    padding-top: ${(props) => (props.footer ? "5%" : "1%")};
+    padding-bottom: ${(props) => (props.footer ? "5%" : "3%")};
   }
 
   @media (max-width: ${({ theme }) => theme.mobile}) {
-    width: 100%;
+    width: 95%;
     margin: 0 auto;
     flex-direction: column;
     align-items: center;
@@ -32,6 +34,7 @@ const NavStyle = styled.section`
     font-weight: bold;
     font-size: 32px;
     margin: 0;
+    padding: 0;
 
     @media (max-width: ${({ theme }) => theme.tablet}) {
       font-size: 24px;
@@ -50,6 +53,7 @@ const NavStyle = styled.section`
     gap: 24px;
     z-index: 1;
     margin: 0;
+    padding: 0;
 
     @media (max-width: ${({ theme }) => theme.mobile}) {
       padding: 0px;
