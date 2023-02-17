@@ -3,8 +3,8 @@ import NavStyle from "./styles/Nav.styled";
 export default function Nav({ footer }) {
   return (
     <NavStyle footer={footer}>
-      <div>adamkeyes</div>
-      <div>
+      <nav>adamkeyes</nav>
+      <nav>
         <img
           src="./images/icon-github.svg"
           alt="github"
@@ -43,7 +43,7 @@ export default function Nav({ footer }) {
             (e.currentTarget.src = "./images/icon-twitter.svg")
           }
         />
-      </div>
+      </nav>
     </NavStyle>
   );
 }

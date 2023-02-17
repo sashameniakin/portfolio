@@ -29,11 +29,10 @@ const NavStyle = styled.section`
     padding-bottom: ${(props) => (props.footer ? "8%" : "3%")};
   }
 
-  div:first-child {
+  nav:first-child {
     color: ${({ theme }) => theme.colors.mainwhite};
     font-weight: bold;
     font-size: 32px;
-    margin-top: ${(props) => (props.footer ? "0%" : "3%")};
 
     @media (max-width: ${({ theme }) => theme.tablet}) {
       font-size: 24px;
@@ -45,7 +44,7 @@ const NavStyle = styled.section`
     }
   }
 
-  div:last-child {
+  nav:last-child {
     display: flex;
     flex-direction: row;
     align-items: center;
