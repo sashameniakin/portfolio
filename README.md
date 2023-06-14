@@ -21,5 +21,6 @@ Users should be able to:
 
 ### Screenshots
 
+![preview](https://github.com/sashameniakin/portfolio-AdamKeyes-LandingPage/assets/110241401/41c8cbc4-cdcb-4322-ab4f-d7429cf76e1c)
 
 
